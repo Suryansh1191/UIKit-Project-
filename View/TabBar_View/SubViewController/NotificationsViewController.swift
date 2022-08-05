@@ -11,6 +11,8 @@ class NotificationsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        title = "Notifiaction"
 
         // Do any additional setup after loading the view.
     }

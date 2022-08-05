@@ -16,21 +16,41 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="a28-ma-Mhd">
+                                <rect key="frame" x="30" y="304" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NM8-UU-rKz">
+                                <rect key="frame" x="30" y="358" width="354" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7g-bs-Ul0">
-                                <rect key="frame" x="165" y="426" width="84" height="44"/>
-                                <color key="tintColor" systemColor="tintColor"/>
+                                <rect key="frame" x="30" y="426" width="354" height="44"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login">
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
-                                    <color key="baseForegroundColor" name="AccentColor"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="f7g-bs-Ul0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Bo-RU-Okc"/>
-                            <constraint firstItem="f7g-bs-Ul0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="TRU-tu-gb4"/>
+                            <constraint firstItem="f7g-bs-Ul0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="6dg-ka-aSh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f7g-bs-Ul0" secondAttribute="trailing" constant="30" id="U3W-Gc-AQH"/>
+                            <constraint firstItem="a28-ma-Mhd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="260" id="VVX-ZA-vOs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NM8-UU-rKz" secondAttribute="trailing" constant="30" id="WZa-EZ-dch"/>
+                            <constraint firstItem="f7g-bs-Ul0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="X9H-jZ-fmj"/>
+                            <constraint firstItem="NM8-UU-rKz" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Y38-Wi-WNI"/>
+                            <constraint firstItem="NM8-UU-rKz" firstAttribute="top" secondItem="a28-ma-Mhd" secondAttribute="bottom" constant="20" id="acj-uu-KPT"/>
+                            <constraint firstItem="f7g-bs-Ul0" firstAttribute="top" secondItem="NM8-UU-rKz" secondAttribute="bottom" constant="34" id="ccU-ga-f7o"/>
+                            <constraint firstItem="a28-ma-Mhd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gVB-cD-xqf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a28-ma-Mhd" secondAttribute="trailing" constant="30" id="qj9-9A-eXU"/>
+                            <constraint firstItem="a28-ma-Mhd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="y3e-In-4Hs"/>
                         </constraints>
                     </view>
                     <connections>
@@ -43,14 +63,8 @@
         </scene>
     </scenes>
     <resources>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

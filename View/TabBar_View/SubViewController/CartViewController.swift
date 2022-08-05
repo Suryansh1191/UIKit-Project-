@@ -16,11 +16,13 @@ class CartViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Card"
         
         //table view assign
         tableView.delegate = self
         tableView.dataSource = self
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return basketData.count
